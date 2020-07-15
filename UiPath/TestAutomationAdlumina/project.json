@@ -1,0 +1,52 @@
+{
+  "name": "TestAutomationAdlumina",
+  "description": "Projeto de Automatização de Teste Adlumina",
+  "main": "Main.xaml",
+  "dependencies": {
+    "UiPath.System.Activities": "[20.6.1-preview]",
+    "UiPath.Testing.Activities": "[1.1.1-preview]",
+    "UiPath.UIAutomation.Activities": "[20.6.0-preview]"
+  },
+  "webServices": [],
+  "entitiesStores": [],
+  "schemaVersion": "4.0",
+  "studioVersion": "20.6.0.0",
+  "projectVersion": "1.0.0",
+  "runtimeOptions": {
+    "autoDispose": false,
+    "isPausable": true,
+    "requiresUserInteraction": true,
+    "supportsPersistence": false,
+    "excludedLoggedData": [
+      "Private:*",
+      "*password*"
+    ],
+    "executionType": "Workflow"
+  },
+  "designOptions": {
+    "projectProfile": "Developement",
+    "outputType": "Tests",
+    "libraryOptions": {
+      "includeOriginalXaml": false,
+      "privateWorkflows": []
+    },
+    "fileInfoCollection": [
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "032440e1-f518-4a10-a201-64c02f1aadfe",
+        "fileName": "TestCase.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "eb6aa3e2-36b2-40be-9aac-1b463c619628",
+        "fileName": "Adlumina\\Login.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "8398d2e6-cde9-42f9-b293-37a8f643a755",
+        "fileName": "Adlumina\\Acessar Report Portfolio.xaml"
+      }
+    ]
+  },
+  "expressionLanguage": "VisualBasic"
+}

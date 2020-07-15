@@ -1,0 +1,85 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Acessar_Report_Portfolio" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="824,614.4" sap2010:WorkflowViewState.IdRef="Acessar_Report_Portfolio_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Acessar_Report_Portfolio" sap:VirtualizedContainerService.HintSize="375.2,328" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" DisplayName="Invoke Login workflow" sap:VirtualizedContainerService.HintSize="333.6,88" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="Adlumina\Login.xaml">
+      <ui:InvokeWorkflowFile.Arguments>
+        <scg:Dictionary x:TypeArguments="x:String, Argument" />
+      </ui:InvokeWorkflowFile.Arguments>
+    </ui:InvokeWorkflowFile>
+    <ui:ClickImage ContinueOnError="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click Image 'iexplore.exe Adlumina'" sap:VirtualizedContainerService.HintSize="333.6,107.2" sap2010:WorkflowViewState.IdRef="ClickImage_1" KeyModifiers="None" MouseButton="BTN_LEFT">
+      <ui:ClickImage.CursorPosition>
+        <ui:CursorPosition Position="Center">
+          <ui:CursorPosition.OffsetX>
+            <InArgument x:TypeArguments="x:Int32" />
+          </ui:CursorPosition.OffsetX>
+          <ui:CursorPosition.OffsetY>
+            <InArgument x:TypeArguments="x:Int32" />
+          </ui:CursorPosition.OffsetY>
+        </ui:CursorPosition>
+      </ui:ClickImage.CursorPosition>
+      <ui:ClickImage.Image>
+        <ui:ImageTarget Image="{x:Null}" Accuracy="0.8" InitialScalingFactor="1.25" Profile="Basic" TargetImageBase64="iVBORw0KGgoAAAANSUhEUgAAAMwAAAAcCAYAAAAtHFDdAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAASVSURBVHhe7ZY/bxNBEMUtUVDT0fEBIqX154AuPW1SUJFAgYQiJKqkSPgARoIKiUQ0CEiZIhERKH8agggoQSAQEl/guOfcc54ns+c72wFsT/Fzbt/Ozu3uzLPTaCxsZ0EQVMQVC67c38muPXxfytUH79y1QTCWuGLO1NJeduflcXbv9Ukps+uf3fVBMJZ4YlWzgDBMMFFYwTOLjQEzTz+GYYLJQwepXxaNIWGYYCLRAZrfmgVoDKFhPJqPDtw1QTDyNObzj4LZtdwwr06ym88+Zc3Vgw4aQ9qGyWM9UmtGjcWNr9nG4e9zPN//5caPKnP5F6V3TjC9vOeuuUh0P62dn25MCsRrfZgLtdS4vtEBDQMzqO5Bw9x68aVjrHE1zI3HHzoanlnMf9FMdbH792BT4a/qPKfVhwEa22ti3u/K5vdzc1WwhkEe5KtrvCQ66McwWENtEgwDYJRBivq34D77NQxA82HO6oOCvJ5heOdWr4o1zNBpzG/lD6fMrh3lDX+cm+Gwo6VADGKxhhrGoLm63xU7qixunEjDdc+hKKeF6db/J/ht7e1fmVs/KgxzVktSdgeDgJzIbfWVzW/tOatXpbXz42LrooMwTDf9GAbxiq6dXt5ta2hMNinxmhXF1xiMdV4NwUYDyIW9cUzsesK9eHvw7sDuHeBsug4a1mos9qj7VLjGgnjm5F4UzhFrGN6RPVuVM7joIAzTTcowbHwtJjVtShaFxWKMjcMzNH0PG54a13rNAHQvhO+3+7fYfSrcB8e8E32ft3+Mge6X8CzIZedoqJSua7g35KNWxTBVz+CigzBMN55htOk1FhcOVAPIQZ1rveaGzjjvvYDFZ9Nw7L0XDGoY5NX3le0fTaqNijigMaSuYey5Feh6fjyXGabOGVx0EIbpho1r8RrUi1MQU9YoWmhbdAU632+bwVLXMB6auywf7wpnxBjPXlOCuoaxuRUb38swdc7gogMapg6T9AvD4mgTgbIGUMriUGjM4VlNYcEcG8I2g6WsORTGpfKQsoayd4XnYRnG0+wc99TLMHXO4KKDMEw33gWyse2FQ0s1CClrFC20LboCnWayzWAZtmHK8tlGxPOwDGNzKza+l2HqnMFFB1NLu+1mJ9fzpGoCD6zh+kkwDIAGVKORVLOkGoU6Gyz1Xhaf620zWMqaQ2FcKg+x+1TQpNqoqTiQugfgGcaeW4HOLxDQyzB1zuDiigVofJrAm7dMimF46VooagDP0FgsxmmMLaCuAygcNL6bcWXNYKER2GipBmZcKo/CO9Fc/LLQe7IxCs/Ce9E4PGOOY6uraXhHem+9DAOqnsGlcTv/SNBcOTPMzJPDnnQMk6/z8o0ai28Kw7TySzRzc/m/opgDqrOIBEWZxq9wPoe/0JC39fa0QERzEBuDsc5jX9CxF9WVKu/hWcryKHp2wjMSaO2GFE3h3RLecccwJh7YNV4czts2TDFO3VGVM7i4YoEapg7jYphho4bx5oMRwBULLi1sZ5fv1gfrvHyTThhmDHDF4EIIw4wBrhgEgY8rBkHg44pBEPi4YhAEPq4YBIHDVvYHWrDHU1o1M30AAAAASUVORK5CYII=" />
+      </ui:ClickImage.Image>
+      <ui:ClickImage.Target>
+        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="c04b539f-a90f-42e0-8c28-488298d92d5e" Selector="&lt;html title='Adlumina | Client Illume - Business Overview: Category' /&gt;">
+          <ui:Target.TimeoutMS>
+            <InArgument x:TypeArguments="x:Int32" />
+          </ui:Target.TimeoutMS>
+          <ui:Target.WaitForReady>
+            <InArgument x:TypeArguments="ui:WaitForReady" />
+          </ui:Target.WaitForReady>
+        </ui:Target>
+      </ui:ClickImage.Target>
+    </ui:ClickImage>
+  </Sequence>
+</Activity>
